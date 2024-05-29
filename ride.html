@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="ride.css"/>
+    <title>Explorez avec style - Friper</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="header__logo">friper.</a>
+        <ul class="header_menu">
+            <li><a href="index.html" class="home">Accueil</a></li>
+            <li><a href="ride.html" class="ride">Balade</a></li>
+            <li><a href="share.html" class="share">Partage</a></li>
+            <li><a href="services.html" class="services">Services</a></li>
+        </ul>
+        <div class="header__buttons">
+            <a href="#" onclick="showLoginForm()">Se connecter</a>
+            <a href="#">S'inscrire</a>
+        </div>
+
+        <div class="header__buttons">
+            <a href="#" id="favoritesButton"><i class="fas fa-heart"></i></a>
+            <a href="#" id="cartButton"><i class="fas fa-shopping-cart"></i></a>
+            <!-- Ajout d'icônes pour Ajouter aux favoris et Panier -->
+        </div>
+
+    </header>
+
+    <section class="ride">
+        <div class="ride__content">
+            <h1 class="title">Découvrez nos suggestions!</h1>
+
+            <ul class="header_menu">
+                <li><a href="#adventure" onclick="scrollToSection('adventure')">Aventure urbaine</a></li>
+                <li><a href="#sportwear" onclick="scrollToSection('sportwear')">Sportwear</a></li>
+                <li><a href="#nature" onclick="scrollToSection('nature')">Escapade en Nature</a></li>
+                <li><a href="#sun" onclick="scrollToSection('sun')">Voyage au soleil</a></li>
+            </ul>
+            
+
+            <div class="adventure">
+                <h2>Aventure urbaine</h2>
+
+                <div class="ride__image">
+                    <div class="ride__image__content">
+                        <div class="image-container">
+                            <img src="assets/c1.jpg" alt="Image 1">
+                            <p>Nom de l'article 1</p>
+                            <p>Prix: 20€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/c2.jpg" alt="Image 2">
+                            <p>Nom de l'article 2</p>
+                            <p>Prix: 25€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/c3`.jpg" alt="Image 3">
+                            <p>Nom de l'article 3</p>
+                            <p>Prix: 30€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/c4`.jpg" alt="Image 1">
+                            <p>Nom de l'article 1</p>
+                            <p>Prix: 20€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/c5.jpg" alt="Image 2">
+                            <p>Nom de l'article 2</p>
+                            <p>Prix: 25€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/c6.jpg" alt="Image 3">
+                            <p>Nom de l'article 3</p>
+                            <p>Prix: 30€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                       
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="sportwear">
+                <h2>Vêtements de sport</h2>
+
+                <div class="ride__image">
+                    <div class="ride__image__content">
+
+                        <div class="image-container">
+                            <img src="assets/d1.jpg" alt="Image 4">
+                            <p>Nom de l'article 4</p>
+                            <p>Prix: 35€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/d2.jpg" alt="Image 5">
+                            <p>Nom de l'article 5</p>
+                            <p>Prix: 40€</p>
+                            <p>Description de l'article 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/d3.jpg" alt="Image 6">
+                            <p>Nom de l'article 6</p>
+                            <p>Prix: 45€</p>
+                            <p>Description de l'article 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/c7.jpg" alt="Image 4">
+                            <p>Nom de l'article 4</p>
+                            <p>Prix: 35€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/c8.jpg" alt="Image 5">
+                            <p>Nom de l'article 5</p>
+                            <p>Prix: 40€</p>
+                            <p>Description de l'article 5 Lorem ipsum dolor sit amet,
+                                 consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/c9.jpg" alt="Image 6">
+                            <p>Nom de l'article 6</p>
+                            <p>Prix: 45€</p>
+                            <p>Description de l'article 6 Lorem ipsum dolor sit amet,
+                                 consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/c10.jpg" alt="Image 4">
+                            <p>Nom de l'article 4</p>
+                            <p>Prix: 35€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/c11.jpg" alt="Image 5">
+                            <p>Nom de l'article 5</p>
+                            <p>Prix: 40€</p>
+                            <p>Description de l'article 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/c12.jpg" alt="Image 6">
+                            <p>Nom de l'article 6</p>
+                            <p>Prix: 45€</p>
+                            <p>Description de l'article 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+ 
+                        
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+            <div class="nature">
+                <h2>Escapade en nature</h2>
+
+                <div class="ride__image">
+                    <div class="ride__image__content">
+                        <div class="image-container">
+                            <img src="assets/image4.jpg" alt="Image 4">
+                            <p>Nom de l'article 4</p>
+                            <p>Prix: 35€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/image5.jpg" alt="Image 5">
+                            <p>Nom de l'article 5</p>
+                            <p>Prix: 40€</p>
+                            <p>Description de l'article 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/image6.jpg" alt="Image 6">
+                            <p>Nom de l'article 6</p>
+                            <p>Prix: 45€</p>
+                            <p>Description de l'article 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/image4.jpg" alt="Image 4">
+                            <p>Nom de l'article 4</p>
+                            <p>Prix: 35€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/image5.jpg" alt="Image 5">
+                            <p>Nom de l'article 5</p>
+                            <p>Prix: 40€</p>
+                            <p>Description de l'article 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/image6.jpg" alt="Image 6">
+                            <p>Nom de l'article 6</p>
+                            <p>Prix: 45€</p>
+                            <p>Description de l'article 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/image4.jpg" alt="Image 4">
+                            <p>Nom de l'article 4</p>
+                            <p>Prix: 35€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/image5.jpg" alt="Image 5">
+                            <p>Nom de l'article 5</p>
+                            <p>Prix: 40€</p>
+                            <p>Description de l'article 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/image6.jpg" alt="Image 6">
+                            <p>Nom de l'article 6</p>
+                            <p>Prix: 45€</p>
+                            <p>Description de l'article 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sun">
+                <h2>Voyage au soleil</h2>
+
+                <div class="ride__image">
+                    <div class="ride__image__content">
+                        <div class="image-container">
+                            <img src="assets/c10.jpg" alt="Image 4">
+                            <p>Nom de l'article 4</p>
+                            <p>Prix: 35€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/c11.jpg" alt="Image 5">
+                            <p>Nom de l'article 5</p>
+                            <p>Prix: 40€</p>
+                            <p>Description de l'article 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/c12.jpg" alt="Image 6">
+                            <p>Nom de l'article 6</p>
+                            <p>Prix: 45€</p>
+                            <p>Description de l'article 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+ 
+                        <div class="image-container">
+                            <img src="assets/image4.jpg" alt="Image 4">
+                            <p>Nom de l'article 4</p>
+                            <p>Prix: 35€</p>
+                            <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/image5.jpg" alt="Image 5">
+                            <p>Nom de l'article 5</p>
+                            <p>Prix: 40€</p>
+                            <p>Description de l'article 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="assets/image6.jpg" alt="Image 6">
+                            <p>Nom de l'article 6</p>
+                            <p>Prix: 45€</p>
+                            <p>Description de l'article 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="ride__image__content">
+                            <div class="image-container">
+                                <img src="assets/image4.jpg" alt="Image 4">
+                                <p>Nom de l'article 4</p>
+                                <p>Prix: 35€</p>
+                                <p>Description de l'article 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+    
+                            <div class="image-container">
+                                <img src="assets/image5.jpg" alt="Image 5">
+                                <p>Nom de l'article 5</p>
+                                <p>Prix: 40€</p>
+                                <p>Description de l'article 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+    
+                            <div class="image-container">
+                                <img src="assets/image6.jpg" alt="Image 6">
+                                <p>Nom de l'article 6</p>
+                                <p>Prix: 45€</p>
+                                <p>Description de l'article 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Ajoutez d'autres sections pour les autres catégories -->
+        </div>
+    </section>
+
+    <footer>
+        <!-- Votre contenu de footer ici -->
+    </footer>
+
+    <script>
+        function scrollToSection(sectionClass) {
+            const sections = document.getElementsByClassName(sectionClass);
+            if (sections.length > 0) {
+                const section = sections[0]; // Suppose que seule la première section avec la classe donnée est ciblée
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+    
+
+</body>
+</html>

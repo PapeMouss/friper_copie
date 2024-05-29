@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}   
+
+::-webkit-scrollbar-thumb { 
+    width: 5px;
+    background-color: rgb(177, 173, 173);
+    border-radius: 6px;
+}
+
+body  {
+    background-color: #EAE2D2;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: .2s ease-in-out;
+    background-image: url("../assets/images/bg.jpg");
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 8%;
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+    height: 60px;
+}
+
+.header__logo {
+    font-weight: 500;
+}
+
+.header_menu {
+    display: flex;
+    align-items: center;
+}
+
+.header_menu li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.header_menu a {
+    margin-left: 20px;
+    padding-bottom: 3px;
+    position: relative;
+}
+
+.header_menu a:after {
+    position: absolute;
+    letter-spacing: 0;
+    bottom: -2px;
+    left: 0;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: black;
+    transition: width 0.5s ease-out;
+}
+
+.header_menu a:hover:after {
+    width: 100%;
+}
+
+.header__buttons {
+    margin-left: 20px;
+}
+
+.header__buttons a:last-child {
+    border: 1px solid #000;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+.header__buttons a:last-child:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: #5e493a;
+}
+
+p {
+    color: rgb(97, 96, 96);
+    margin: 20px 0;
+    letter-spacing: 2px;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.ride {
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4% !important;
+}
+
+.ride__content {
+    width: 100%;
+}
+
+.adventure,
+.nature,
+.sun {
+    margin-bottom: 50px;
+}
+
+.adventure h2,
+.nature h2{
+    font-size: 30px;
+    color: #5e493a;
+    margin-bottom: 20px;
+}
+
+.adventure p,
+.nature p,
+.sun p 
+.sportwear p{
+    margin-bottom: 20px;
+}
+
+.sun h2, .sportwear{
+    font-size: 30px !important;   
+    color: #5e493a !important;
+    margin-bottom: 20px !important;
+}
+
+/*----*/
+
+.ride__image {
+    padding: 0 8%;
+    margin-top: 4%;
+    overflow-y: auto; /* Ajoute un défilement vertical si nécessaire */
+    max-height: calc(100vh - 300px); /* Hauteur maximale, ajustez selon vos besoins */
+}
+
+
+.ride__image__content {
+    display: flex;
+    flex-direction: row; /* Alignement horizontal des éléments */
+    justify-content: space-between; /* Pour répartir l'espace entre les éléments */
+    align-items: center;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+.ride__image__content h1 {
+    font-size: 30px;
+    color: #5e493a;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    width: calc(33.33% - 20px); /* Ajustez la largeur selon le nombre d'images par ligne */
+    margin-top: 20px;
+    box-sizing: border-box; /* Assure que la largeur inclut également la marge */
+}
+.image-container img {
+    width: 100%;
+    max-width: 400px; /* Ajustez la largeur maximale selon vos besoins */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.image-container p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+.sportwear h2 {
+    font-size: 30px !important; /* ou la taille de police souhaitée */
+    color: #5e493a;
+    margin-bottom: 20px;
+}
+.header_menu{
+    
+    margin-bottom: 3%;
+    margin-top: 3%
+
+}
+
+/*------*/
+
+
+/*--footer--*/
+footer {
+    background-color: #333; /* ajustez la couleur de fond selon vos préférences */
+    color: #fff; /* ajustez la couleur du texte selon vos préférences */
+    padding: 20px; /* ajustez l'espacement intérieur selon vos préférences */
+    text-align: center;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__newletter {
+    margin-bottom: 10px;
+}
+
+.footer__newletter input {
+    padding: 8px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer__newletter button {
+    padding: 8px 15px;
+    background-color: #fff; /* ajustez la couleur de fond selon vos préférences */
+    color: #333; /* ajustez la couleur du texte selon vos préférences */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icons a {
+    color: #fff; /* ajustez la couleur des icônes selon vos préférences */
+    margin-right: 10px;
+}
+
+.icons a:last-child {
+    margin-right: 0;
+}

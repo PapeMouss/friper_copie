@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="favoris.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Inclure Font Awesome -->
+    <title>Favoris</title>
+</head>
+<body>
+    <header>
+
+        <a href="#" class="header__logo">friper.</a>
+        <ul class="header_menu">
+            <li><a href="index.html" class="home">Accueil</a></li>
+            <li><a href="ride.html" class="ride">Balade</a></li>
+            <li><a href="share.html" class="share">Partage</a></li>
+            <li><a href="services.html" class="services">Services</a></li>
+        </ul>
+        <div class="header__buttons">
+            <a href="#" onclick="showLoginForm()">Se connecter</a>
+            <a href="#">S'inscrire</a>
+        </div>
+
+        <div class="header__buttons">
+            <a href="#" id="favoritesButton"><i class="fas fa-heart"></i></a>
+            <a href="#" id="cartButton"><i class="fas fa-shopping-cart"></i></a>
+            <!-- Ajout d'icônes pour Ajouter aux favoris et Panier -->
+       
+    </header>
+
+    <section class="favorites">
+        <div class="favorites__content">
+            <h1 class="title">Mes Favoris</h1>
+            <!-- Contenu de la section Favoris -->
+            <div class="favorite-item">
+                <img src="chemin/vers/votre/image1.jpg" alt="Nom du produit">
+                <p>Nom du produit</p>
+                <p>Prix: XX€</p>
+                <p>Description du produit Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Acheter</button>
+            </div>
+            <div class="favorite-item">
+                <img src="chemin/vers/votre/image2.jpg" alt="Nom du produit">
+                <p>Nom du produit</p>
+                <p>Prix: XX€</p>
+                <p>Description du produit Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Acheter</button>
+            </div>
+            <!-- Ajoutez d'autres produits favoris ici -->
+        </div>
+    </section>
+
+    <footer>
+        <!-- Contenu du footer -->
+    </footer>
+</body>
+</html>

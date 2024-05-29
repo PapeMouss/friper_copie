@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}   
+
+::-webkit-scrollbar-thumb { 
+    width: 5px;
+    background-color: rgb(177, 173, 173);
+    border-radius: 6px;
+}
+
+body  {
+    background-color: #EAE2D2;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: .2s ease-in-out;
+    background-image: url("../assets/images/bg.jpg");
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 8%;
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+    height: 60px;
+}
+
+.header__logo {
+    font-weight: 500;
+}
+
+.header_menu {
+    display: flex;
+    align-items: center;
+}
+
+.header_menu li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.header_menu a {
+    margin-left: 20px;
+    padding-bottom: 3px;
+    position: relative;
+}
+
+.header_menu a:after {
+    position: absolute;
+    letter-spacing: 0;
+    bottom: -2px;
+    left: 0;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: black;
+    transition: width 0.5s ease-out;
+}
+
+.header_menu a:hover:after {
+    width: 100%;
+}
+
+.header__buttons {
+    margin-left: 20px;
+}
+
+.header__buttons a:last-child {
+    border: 1px solid #000;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+.header__buttons a:last-child:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: #5e493a;
+}
+
+p {
+    color: rgb(97, 96, 96);
+    margin: 20px 0;
+    letter-spacing: 2px;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.services {
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4% !important;
+}
+
+.services__content {
+    width: 100%;
+}
+
+.delivery,
+.customer-service,
+.return-policy {
+    margin-bottom: 50px;
+}
+
+.fast__delivery h2,
+.dedicated__customer h2,
+.easy__return h2 {
+    margin-top: 3%;
+    font-size: 30px;
+    color: #5e493a;
+    margin-bottom: 20px;
+}
+
+
+.delivery p,
+.customer-service p,
+.return-policy p {
+    margin-bottom: 20px;
+}
+
+/*------*/
+
+.delivery-animation {
+    position: relative;
+    width: 100px; /* Ajustez la taille selon vos besoins */
+    height: 100px; /* Ajustez la taille selon vos besoins */
+}
+
+.truck {
+    position: absolute;
+    background-image: url('assets/camion2.png'); /* Assurez-vous que 'camion.png' correspond au nom de votre image */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    animation: moveTruck 2s linear infinite; /* Réglez la durée et le type d'animation selon vos besoins */
+}
+
+
+@keyframes moveTruck {
+    0% { right: -350px; } /* Démarre la camion à gauche */
+    100% { right: calc(100% + 100px); } /* Fait déplacer le camion jusqu'à la droite */
+}
+
+/*--------*/
+.customer-service-animation img {
+    margin-left: 14%;
+    width: 100px; /* ajustez la taille de l'image selon vos besoins */
+    height: auto;
+    animation: zoomInCustomerService 2s ease-in-out infinite alternate; /* ajustez la durée et le type d'animation selon vos besoins */
+}
+
+@keyframes zoomInCustomerService {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2); }
+}
+
+/*------*/
+
+.return-policy-animation {
+   
+    margin-left: 14%;
+}
+
+.return-policy-animation img {
+    width: 100px; /* ajustez la taille de l'image selon vos besoins */
+    height: auto;
+    animation: swingReturnPolicy 2s ease-in-out infinite alternate; /* ajustez la durée et le type d'animation selon vos besoins */
+}
+
+@keyframes swingReturnPolicy {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
+    100% { transform: rotate(-15deg); }
+}

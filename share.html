@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="share.css"/>
+    <title>Partagez votre style avec Friper !</title>
+    <!--icons code -->
+    <script src="https://kit.fontawesome.com/a9decbbec9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="to_top">
+        <a href="#" class="header__logo">friper.</a>
+        <ul class="header_menu">
+            <li><a href="index.html" class="home">Accueil</a></li>
+            <li><a href="ride.html" class="ride">Balade</a></li>
+            <li><a href="share.html" class="share">Partage</a></li>
+            <li><a href="services.html" class="services">Services</a></li>
+        </ul>
+        <div class="header__buttons">
+            <a href="#" onclick="showLoginForm()">Se connecter</a>
+            <a href="#">S'incrire</a>
+        </div>
+
+        <div class="header__buttons">
+            <a href="#" id="favoritesButton"><i class="fas fa-heart"></i></a>
+            <a href="#" id="cartButton"><i class="fas fa-shopping-cart"></i></a>
+            <!-- Ajout d'icônes pour Ajouter aux favoris et Panier -->
+        </div>
+
+    </header>
+
+    <section class="share">
+        <div class="share__left">
+            <div class="share__content">
+                <h1 class="title">Partagez votre style avec Friper !</h1>
+                <p>Rejoignez notre communauté et partagez vos looks préférés avec le monde entier.</p>
+
+                <div class="share__style">
+                    <h2>Partagez votre style</h2>
+                    <p>Utilisez le hashtag <strong>#FriperStyle</strong> lorsque vous partagez vos photos sur les réseaux sociaux pour que d'autres passionnés de la mode puissent découvrir votre style unique !</p>
+                    <!-- Ajoutez la galerie de photos de clients ici -->
+                </div>
+                
+                <div class="community__inspiration">
+                    <h2>Inspirations de la communauté</h2>
+                    <!-- Mise en avant des meilleurs looks partagés par la communauté -->
+                </div>
+
+                <button class="join__community">Rejoindre la communauté</button>
+            </div>
+        </div>
+
+        <div class="share__right">
+            <h2></h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="assets/image9.jpg" style="width:100%">
+                </div>
+        
+                <div class="mySlides fade">
+                    <img src="assets/image10.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/c13.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/d3.jpg" style="width:100%">
+                </div>
+        
+                <!-- Ajoutez plus de diapositives ici -->
+        
+                <!-- Boutons "précédent" et "suivant" -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="col1">
+            <p>inscription</p>
+            <div class="footer__newletter">
+                <input type="text"  placeholder="exemple@gmail.com">
+                <button>SUBSCRIBE</button>
+            </div>
+            <p>suivez-nous</p>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p>&copy;2024 friper, tout droit réservé</p>
+        </div>
+    </footer>
+    
+
+    <script>
+        //to the top fonction
+        function link (){
+            location.href="#to_top"
+        }
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+
+    </script>
+
+<script src="https://kit.fontawesome.com/a9decbbec9.js" crossorigin="anonymous"></script>
+
+
+    
+
+</body>
+</html>

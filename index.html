@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Friper</title>
+    <!--icons code -->
+    <script src="https://kit.fontawesome.com/a9decbbec9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+<!--------------------------------- HEADER ------------------------------------>
+
+<header id="to_top">
+    <a href="#" class="header__logo">friper.</a>
+    <ul class="header_menu">
+        <li><a href="index.html" class="home">Accueil</a></li>
+        <li><a href="ride.html" class="ride">Balade</a></li>
+        <li><a href="share.html" class="share">Partage</a></li>
+        <li><a href="services.html" class="services">Services</a></li>
+    </ul>
+    
+    <div class="header__buttons">
+        <a href="#" id="loginButton">Se connecter</a>
+        <a href="#" id="signupButton">S'inscrire</a>
+    </div>
+
+    <div class="header__buttons">
+        <a href="#" id="favoritesButton"><i class="fas fa-heart"></i></a>
+        <a href="#" id="cartButton"><i class="fas fa-shopping-cart"></i></a>
+        <!-- Ajout d'icônes pour Ajouter aux favoris et Panier -->
+    </div>
+
+</header>
+<!---------------------------------------------------------------------------------------->
+<!---------------------------------------Home--------------------------------------------->
+
+<section class="home">
+    <div class="home__left">
+        <h1 class="title">Trouvez votre outfit parfaite.</h1>
+        <p>Découvrez Friper, votre destination mode unique au Sénégal.
+            Des pièces uniques et tendance de friperie à des prix abordables. 
+            Chopes tes Sapes !</p>
+    
+        <div class="home__button">
+            <button id="buyItemsButton">Achetez nos articles"</button>
+            <button>quote
+                    <span class="home__abou-us">
+                        <h1 class="title">Our key quote</h1>
+                        <img src="assets/image5.jpg">
+                        <p>"fashion dominates the provinciales ,but parisians dominates the fashion."</p>
+                    </span>
+            </button>
+        </div>
+    </div>
+
+    <div class="home__right">
+        <img src="assets/image6.jpg" >
+    </div>
+</section>
+
+<!----------------------------------best sales------------------------------------>
+
+<section class="best-sales">
+    <h1 class="title">Nos Meilleurs Ventes</h1>
+    <div class="best-sales__product">
+        <div class="div1"> 
+            <img src="assets/image8.jpg">
+        </div>
+        <div class="div2">
+             <img src="assets/image7.jpg">
+        </div>
+        <div class="div3"> 
+            <span>friper</span>
+        </div>
+        <div class="div4"> 
+            <span>gucci libo</span>
+        </div>
+        <div class="div5"> 
+            <span>top srrow</span>
+         </div>
+        <div class="div6"> 
+            <img src="assets/image2.jpg">
+        </div>
+        <div class="div7"> 
+            <span>best regard</span>
+        </div>
+    </div>
+</section>
+
+<!--------------------------------------img section-------------------------------->
+
+<section class="img-section">
+    <h1 class="title">Nos Meilleurs Modéles</h1>
+    <div class="img-section__content">
+        <img src="assets/image3.jpg">
+        <p> "Explorez notre collection de vêtements vintage soigneusement sélectionnée, 
+            comprenant des chemises, des robes, des vestes, des jeans et bien plus encore. 
+            Chaque pièce raconte une histoire et vous permet d'exprimer votre style unique."</p>
+    </div>
+</section>
+
+<!-------------------------------------footer--------------------------------------->
+
+<footer>
+    <div class="col1">
+        <p>inscription</p>
+        <div class="footer__newletter">
+                <input type="text"  placeholder="exemple@gmail.com">
+                <button>SUBSCRIBE</button>
+        </div>
+        <p>suivez-nous</p>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>&copy;2024 friper, tout droit réservé</p>
+    </div>
+
+    <div class="col2">
+        <p class="small_title">type faces</p>
+        <a href="#">nord</a>
+        <a href="#">est</a>
+        <a href="#">sud</a>
+        <a href="#">conditions</a>
+        <a href="#">left</a>
+    </div>
+
+    <div class="col3">
+        <p class="small__title">marques</p>
+        <a href="#">adidas</a>
+        <a href="#">nike</a>
+        <a href="#">under armor</a>
+        <a href="#">lacoste</a>
+        <a href="#">puma</a>
+
+
+    </div>
+    <div class="col4">
+        <button class="top_btn" onclick="link()">to top</button>
+        <p>site by Moussa MAR</p>
+    </div> 
+</footer>
+
+<!---------------------------------------------------------------------------------------->
+
+<script>
+
+    document.getElementById("buyItemsButton").addEventListener("click", function(event) {
+        event.preventDefault(); // Empêche le comportement par défaut du bouton
+        window.location.href = "ride.html"; // Redirige vers la page ride.html
+    });
+
+    // Fonction pour gérer le clic sur le lien "Se connecter"
+    document.getElementById("loginButton").addEventListener("click", function(event) {
+        // Empêcher le comportement par défaut du lien
+        event.preventDefault();
+        // Rediriger vers la page loginpage.html
+        window.location.href = "loginpage.html";
+    });
+
+       // Fonction pour gérer le clic sur le bouton "S'inscrire"
+    document.getElementById("signupButton").addEventListener("click", function(event) {
+        // Empêcher le comportement par défaut du lien
+        event.preventDefault();
+        // Rediriger vers la page subscribe.html
+        window.location.href = "subscribe.html";
+    });
+
+    //to the top fonction
+    function link (){
+        location.href="#to_top";
+    }
+</script>
+
+</body>
+</html>
+
