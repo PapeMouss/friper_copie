@@ -3,9 +3,11 @@
 from flask import Flask
 from flask_login import LoginManager
 from database import engine
+from models import Utilisateur
 
 # Créez une instance de l'application Flask
 app = Flask(__name__)
+
 
 # Importez vos routes Flask depuis routes.py
 from routes import *
@@ -18,7 +20,7 @@ if __name__ == '__main__':
 ####
 # app.py
 app = Flask(__name__)
-app.secret_key = 'votre_clé_secrète'  # Clé secrète pour sécuriser les sessions utilisateur
+app.secret_key = 'Langston72222()'  # Clé secrète pour sécuriser les sessions utilisateur
 
 # Configurez Flask-Login
 login_manager = LoginManager()
@@ -41,6 +43,14 @@ def unauthorized():
 from routes import *
 
 # Point d'entrée de l'application Flask
+if __name__ == '__main__':
+    print("L'application Flask démarre...")
+    app.run(debug=True)
+
+
+# Importez vos routes Flask depuis routes.py
+import routes
+
 if __name__ == '__main__':
     print("L'application Flask démarre...")
     app.run(debug=True)

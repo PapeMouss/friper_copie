@@ -12,9 +12,14 @@ class Utilisateur(Base):
     id = Column(Integer, primary_key=True)
     nom = Column(String)
     email = Column(String)
+    mot_de_passe = Column(String)
 
     commandes = relationship("Commande", back_populates="utilisateur")
     favoris = relationship("Favori", back_populates="utilisateur")
+
+
+     def check_password(self, mot_de_passe):
+        return self.mot_de_passe == mot_de_passe
 
 class Produit(Base):
     __tablename__ = 'produits'
